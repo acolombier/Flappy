@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
-  JumpBoost: 30
+  JumpBoost: 15
   CoolDownTime: 2
   Gravity: 50
 --- !u!1 &170076733

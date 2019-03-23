@@ -37,7 +37,7 @@ public class Bird : MonoBehaviour
             }
             else if (Input.GetButtonDown("Jump"))
             {
-                rigitBody.velocity += new Vector3(0, JumpBoost, 0);
+                rigitBody.velocity = new Vector3(Speed, JumpBoost, 0);
             }
         }
         else if (knockedOutAt != 0 && knockedOutAt + CoolDownTime < Time.fixedTime)
