@@ -228,5 +228,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bird: {fileID: 0}
-  GateSize: {x: 0, y: 2}
-  readyToDelete: 0
+  GateSize: {x: 0, y: 0}
+  GatePosition: {x: -3, y: 4}
