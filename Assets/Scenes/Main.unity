@@ -602,8 +602,12 @@ MonoBehaviour:
   GateSpace: 7
   GatePrefab: {fileID: 7285945849180834487, guid: 2cd24d81190a4c04189b4f81d9bbf468,
     type: 3}
+  BackgroundPrefab: {fileID: 462992907824147245, guid: 00e25a895e8cce74cba2ce0f5733e1be,
+    type: 3}
   Bird: {fileID: 83163729}
   GateCounter: {fileID: 1447393751}
+  BackgroundWidth: 32
+  BackgroundLoadedOffset: 64
 --- !u!1001 &1114920514
 PrefabInstance:
   m_ObjectHideFlags: 0
