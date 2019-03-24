@@ -10,17 +10,18 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Pipe
+    4300002: Pipe_dup
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.001
-    second: {fileID: 2100000, guid: c8c96b0f91275bc4c9b1cf14cb437b05, type: 2}
+    second: {fileID: 2100000, guid: 45128d9a6ea93ca4293f9843c32018ff, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.002
-    second: {fileID: 2100000, guid: fdc734bbb326e8e429b86878662c3c64, type: 2}
+    second: {fileID: 2100000, guid: ae0208ba0788c1c42ad452119c30458c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
