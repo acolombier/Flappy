@@ -60,8 +60,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bird: {fileID: 0}
-  GateSize: {x: 0, y: 0}
-  GatePosition: {x: -3, y: 3}
+  GateSize: {x: 0, y: 0.3}
+  GatePosition: {x: -2, y: 3}
 --- !u!64 &8319567394393784848
 MeshCollider:
   m_ObjectHideFlags: 0

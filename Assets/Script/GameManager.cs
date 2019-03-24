@@ -8,10 +8,18 @@ public class GameManager : MonoBehaviour
     public float GateSpace = 10f;
 
     public GameObject GatePrefab;
+    public GameObject BackgroundPrefab;
     public GameObject Bird;
     public GameObject GateCounter;
 
-    private ArrayList Gates = new ArrayList();
+    public float BackgroundWidth = 32f;
+    public float BackgroundLoadedOffset = 64f;
+
+    private List<Gate> Gates = new List<Gate>();
+    private Queue<GameObject> Backgrounds = new Queue<GameObject>();
+
+    private GameObject lastBackground = null; // Because CSharp is the worse language ever, no Queue.last()
+
     private int gatePassed = 0;
     private UnityEngine.UI.Text gatesLabel;
 
@@ -27,8 +35,20 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Gates.Clear();
+        Backgrounds.Clear();
+        
         SpawnGate();
         SpawnGate();
+
+        while (ShouldLoadBackground())
+        {
+            SpawnBackground();
+        }
+    }
+
+    private bool ShouldLoadBackground()
+    {
+        return !lastBackground || Bird.transform.position.x > lastBackground.transform.position.x - BackgroundLoadedOffset;
     }
 
     private void SpawnGate()
@@ -37,7 +57,7 @@ public class GameManager : MonoBehaviour
 
         for (int i = 0; i < Gates.Count; i++)
         {
-            if (!((Gate)Gates[i]).passed)
+            if (!Gates[i].passed)
                 offset++;
             else break;
         }
@@ -50,7 +70,7 @@ public class GameManager : MonoBehaviour
 
         if (Gates.Count > maxGatesCache)
         {
-            Destroy(((Gate)Gates[maxGatesCache]).gameObject);
+            Destroy(Gates[maxGatesCache].gameObject);
             Gates.RemoveAt(maxGatesCache);
         }        
     }
@@ -58,12 +78,34 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (((Gate)Gates[1]).passed)
+        if (Gates[1].passed && Bird.GetComponent<Bird>().Alive) // Might be faster to cache the component
         {
             gatePassed++;
             SpawnGate();
         }
         gatesLabel.text = gatePassed.ToString();
 
+        if (ShouldLoadBackground())
+        {
+            SpawnBackground();
+        }
+        if (Bird.transform.position.x > Backgrounds.Peek().transform.position.x + BackgroundLoadedOffset)
+        {
+            DespawnBackground();
+        }
+
+    }
+
+    private void SpawnBackground()
+    {
+        float offset = lastBackground == null ? -BackgroundLoadedOffset : lastBackground.transform.position.x + BackgroundWidth;
+
+        lastBackground = Instantiate(BackgroundPrefab, new Vector3(offset, 0, 0), Quaternion.identity);
+        Backgrounds.Enqueue(lastBackground);
+    }
+
+    private void DespawnBackground()
+    {
+        Destroy(Backgrounds.Dequeue());
     }
 }

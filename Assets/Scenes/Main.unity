@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.22105342, g: 0.32848364, b: 0.52031136, a: 1}
+  m_IndirectSpecularColor: {r: 0.22105342, g: 0.32848358, b: 0.5203114, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -112,6 +112,94 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &68426637
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 462992907824147245, guid: 00e25a895e8cce74cba2ce0f5733e1be,
+        type: 3}
+      propertyPath: m_Name
+      value: Background
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 00e25a895e8cce74cba2ce0f5733e1be, type: 3}
+--- !u!1 &68426638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2509939695933883425, guid: 00e25a895e8cce74cba2ce0f5733e1be,
+    type: 3}
+  m_PrefabInstance: {fileID: 68426637}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &68426639
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68426638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.022415636, y: 0.055629153, z: 0.038032908}
+  m_Center: {x: 0, y: 0, z: -0.0061927796}
 --- !u!1 &83163729
 GameObject:
   m_ObjectHideFlags: 0
@@ -767,8 +855,12 @@ MonoBehaviour:
   GateSpace: 7
   GatePrefab: {fileID: 7285945849180834487, guid: 2cd24d81190a4c04189b4f81d9bbf468,
     type: 3}
+  BackgroundPrefab: {fileID: 462992907824147245, guid: 00e25a895e8cce74cba2ce0f5733e1be,
+    type: 3}
   Bird: {fileID: 83163729}
   GateCounter: {fileID: 1447393751}
+  BackgroundWidth: 32
+  BackgroundLoadedOffset: 64
 --- !u!4 &1000826051 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: 6e1bfbe438393ac46abe1770cace2f81,
@@ -1003,10 +1095,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bird
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: 6e1bfbe438393ac46abe1770cace2f81, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 561c239f2aa49b745a56a0c43a36d7f8, type: 2}
     - target: {fileID: 400004, guid: 6e1bfbe438393ac46abe1770cace2f81, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.387
@@ -1051,6 +1139,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 6e1bfbe438393ac46abe1770cace2f81, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 561c239f2aa49b745a56a0c43a36d7f8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e1bfbe438393ac46abe1770cace2f81, type: 3}
 --- !u!1 &2011251988
