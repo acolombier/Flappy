@@ -43,7 +43,7 @@ public class Bird : MonoBehaviour
             else
             {
 #if UNITY_ANDROID
-                if (Input.touchCount != 0)
+                if (Input.touchCount != 0 && Input.GetTouch(0).phase == TouchPhase.Began)
 #elif UNITY_STANDALONE || UNITY_WEBPLAYER
                 if (Input.GetButtonDown("Jump"))
 #endif
