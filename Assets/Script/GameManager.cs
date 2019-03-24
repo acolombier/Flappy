@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
     private int gatePassed = 0;
     private UnityEngine.UI.Text gatesLabel;
 
+    private int maxGatesCache = 5;
+    private int unpassedGate = 0;
+
     private void Awake()
     {
         gatesLabel = GateCounter.GetComponent<UnityEngine.UI.Text>();
@@ -25,28 +28,32 @@ public class GameManager : MonoBehaviour
     {
         Gates.Clear();
         SpawnGate();
+        SpawnGate();
+        ((Gate)Gates[0]).enabled = false;
     }
 
     private void SpawnGate()
     {
-        Gate gate = Instantiate(GatePrefab, Bird.transform.position + new Vector3(GateSpace, 0, 0), Quaternion.identity).GetComponent<Gate>();
+        unpassedGate++;
+        Gate gate = Instantiate(GatePrefab, Bird.transform.position + new Vector3(unpassedGate * GateSpace, 0, 0), Quaternion.identity).GetComponent<Gate>();
 
         gate.Bird = Bird;
 
         Gates.Insert(0, gate);
 
-        if (Gates.Count > 3)
+        if (Gates.Count > maxGatesCache)
         {
-            Destroy(((Gate)Gates[3]).gameObject);
-            Gates.RemoveAt(3);
+            Destroy(((Gate)Gates[maxGatesCache]).gameObject);
+            Gates.RemoveAt(maxGatesCache);
         }        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (((Gate)Gates[0]).passed)
+        if (((Gate)Gates[1]).passed)
         {
+            unpassedGate--;
             gatePassed++;
             SpawnGate();
         }
