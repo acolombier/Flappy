@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     private UnityEngine.UI.Text gatesLabel;
 
     private int maxGatesCache = 5;
-    private int unpassedGate = 0;
+    private int precachedGates = 2;
 
     private void Awake()
     {
@@ -29,13 +29,20 @@ public class GameManager : MonoBehaviour
         Gates.Clear();
         SpawnGate();
         SpawnGate();
-        ((Gate)Gates[0]).enabled = false;
     }
 
     private void SpawnGate()
     {
-        unpassedGate++;
-        Gate gate = Instantiate(GatePrefab, Bird.transform.position + new Vector3(unpassedGate * GateSpace, 0, 0), Quaternion.identity).GetComponent<Gate>();
+        int offset = Gates.Count < precachedGates ? precachedGates : 1; // If it is the first gate of the game, we put a warmup offset
+
+        for (int i = 0; i < Gates.Count; i++)
+        {
+            if (!((Gate)Gates[i]).passed)
+                offset++;
+            else break;
+        }
+
+        Gate gate = Instantiate(GatePrefab, Bird.transform.position + new Vector3(offset * GateSpace, 0, 0), Quaternion.identity).GetComponent<Gate>();
 
         gate.Bird = Bird;
 
@@ -53,7 +60,6 @@ public class GameManager : MonoBehaviour
     {
         if (((Gate)Gates[1]).passed)
         {
-            unpassedGate--;
             gatePassed++;
             SpawnGate();
         }
