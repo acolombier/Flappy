@@ -3,271 +3,31 @@ guid: 6e1bfbe438393ac46abe1770cace2f81
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: BezierCircle
-    100002: BezierCurve.000
-    100004: BezierCurve.002
-    100006: //RootNode
-    100008: Cube.002
-    100010: Pipe
-    100012: Pipe_dup
-    100014: Plane
-    100016: Plane.001
-    100018: Plane.002
-    100020: Plane.002|Cube.002|Dupli|
-    100022: Plane.002|Cube.002|Dupli|1
-    100024: Plane.002|Cube.002|Dupli|10
-    100026: Plane.002|Cube.002|Dupli|11
-    100028: Plane.002|Cube.002|Dupli|12
-    100030: Plane.002|Cube.002|Dupli|13
-    100032: Plane.002|Cube.002|Dupli|14
-    100034: Plane.002|Cube.002|Dupli|15
-    100036: Plane.002|Cube.002|Dupli|16
-    100038: Plane.002|Cube.002|Dupli|17
-    100040: Plane.002|Cube.002|Dupli|18
-    100042: Plane.002|Cube.002|Dupli|19
-    100044: Plane.002|Cube.002|Dupli|2
-    100046: Plane.002|Cube.002|Dupli|20
-    100048: Plane.002|Cube.002|Dupli|21
-    100050: Plane.002|Cube.002|Dupli|22
-    100052: Plane.002|Cube.002|Dupli|23
-    100054: Plane.002|Cube.002|Dupli|24
-    100056: Plane.002|Cube.002|Dupli|25
-    100058: Plane.002|Cube.002|Dupli|26
-    100060: Plane.002|Cube.002|Dupli|27
-    100062: Plane.002|Cube.002|Dupli|28
-    100064: Plane.002|Cube.002|Dupli|29
-    100066: Plane.002|Cube.002|Dupli|3
-    100068: Plane.002|Cube.002|Dupli|30
-    100070: Plane.002|Cube.002|Dupli|31
-    100072: Plane.002|Cube.002|Dupli|32
-    100074: Plane.002|Cube.002|Dupli|33
-    100076: Plane.002|Cube.002|Dupli|34
-    100078: Plane.002|Cube.002|Dupli|4
-    100080: Plane.002|Cube.002|Dupli|5
-    100082: Plane.002|Cube.002|Dupli|6
-    100084: Plane.002|Cube.002|Dupli|7
-    100086: Plane.002|Cube.002|Dupli|8
-    100088: Plane.002|Cube.002|Dupli|9
-    100090: Plane.003
-    100092: Plane.003|Cube.002|Dupli|
-    100094: Plane.003|Cube.002|Dupli|1
-    100096: Plane.003|Cube.002|Dupli|10
-    100098: Plane.003|Cube.002|Dupli|11
-    100100: Plane.003|Cube.002|Dupli|12
-    100102: Plane.003|Cube.002|Dupli|13
-    100104: Plane.003|Cube.002|Dupli|14
-    100106: Plane.003|Cube.002|Dupli|2
-    100108: Plane.003|Cube.002|Dupli|3
-    100110: Plane.003|Cube.002|Dupli|4
-    100112: Plane.003|Cube.002|Dupli|5
-    100114: Plane.003|Cube.002|Dupli|6
-    100116: Plane.003|Cube.002|Dupli|7
-    100118: Plane.003|Cube.002|Dupli|8
-    100120: Plane.003|Cube.002|Dupli|9
-    400000: BezierCircle
-    400002: BezierCurve.000
-    400004: BezierCurve.002
-    400006: //RootNode
-    400008: Cube.002
-    400010: Pipe
-    400012: Pipe_dup
-    400014: Plane
-    400016: Plane.001
-    400018: Plane.002
-    400020: Plane.002|Cube.002|Dupli|
-    400022: Plane.002|Cube.002|Dupli|1
-    400024: Plane.002|Cube.002|Dupli|10
-    400026: Plane.002|Cube.002|Dupli|11
-    400028: Plane.002|Cube.002|Dupli|12
-    400030: Plane.002|Cube.002|Dupli|13
-    400032: Plane.002|Cube.002|Dupli|14
-    400034: Plane.002|Cube.002|Dupli|15
-    400036: Plane.002|Cube.002|Dupli|16
-    400038: Plane.002|Cube.002|Dupli|17
-    400040: Plane.002|Cube.002|Dupli|18
-    400042: Plane.002|Cube.002|Dupli|19
-    400044: Plane.002|Cube.002|Dupli|2
-    400046: Plane.002|Cube.002|Dupli|20
-    400048: Plane.002|Cube.002|Dupli|21
-    400050: Plane.002|Cube.002|Dupli|22
-    400052: Plane.002|Cube.002|Dupli|23
-    400054: Plane.002|Cube.002|Dupli|24
-    400056: Plane.002|Cube.002|Dupli|25
-    400058: Plane.002|Cube.002|Dupli|26
-    400060: Plane.002|Cube.002|Dupli|27
-    400062: Plane.002|Cube.002|Dupli|28
-    400064: Plane.002|Cube.002|Dupli|29
-    400066: Plane.002|Cube.002|Dupli|3
-    400068: Plane.002|Cube.002|Dupli|30
-    400070: Plane.002|Cube.002|Dupli|31
-    400072: Plane.002|Cube.002|Dupli|32
-    400074: Plane.002|Cube.002|Dupli|33
-    400076: Plane.002|Cube.002|Dupli|34
-    400078: Plane.002|Cube.002|Dupli|4
-    400080: Plane.002|Cube.002|Dupli|5
-    400082: Plane.002|Cube.002|Dupli|6
-    400084: Plane.002|Cube.002|Dupli|7
-    400086: Plane.002|Cube.002|Dupli|8
-    400088: Plane.002|Cube.002|Dupli|9
-    400090: Plane.003
-    400092: Plane.003|Cube.002|Dupli|
-    400094: Plane.003|Cube.002|Dupli|1
-    400096: Plane.003|Cube.002|Dupli|10
-    400098: Plane.003|Cube.002|Dupli|11
-    400100: Plane.003|Cube.002|Dupli|12
-    400102: Plane.003|Cube.002|Dupli|13
-    400104: Plane.003|Cube.002|Dupli|14
-    400106: Plane.003|Cube.002|Dupli|2
-    400108: Plane.003|Cube.002|Dupli|3
-    400110: Plane.003|Cube.002|Dupli|4
-    400112: Plane.003|Cube.002|Dupli|5
-    400114: Plane.003|Cube.002|Dupli|6
-    400116: Plane.003|Cube.002|Dupli|7
-    400118: Plane.003|Cube.002|Dupli|8
-    400120: Plane.003|Cube.002|Dupli|9
-    2100000: Material.002
-    2100002: Material.001
-    2100004: No Name
-    2100006: Material.008
-    2100008: Material.004
-    2100010: Material.003
-    2100012: Material.009
-    2100014: Material.005
-    2100016: Material.006
-    2300000: BezierCircle
-    2300002: BezierCurve.000
-    2300004: BezierCurve.002
-    2300006: Cube.002
-    2300008: Pipe
-    2300010: Pipe_dup
-    2300012: Plane
-    2300014: Plane.001
-    2300016: Plane.002
-    2300018: Plane.002|Cube.002|Dupli|
-    2300020: Plane.002|Cube.002|Dupli|1
-    2300022: Plane.002|Cube.002|Dupli|10
-    2300024: Plane.002|Cube.002|Dupli|11
-    2300026: Plane.002|Cube.002|Dupli|12
-    2300028: Plane.002|Cube.002|Dupli|13
-    2300030: Plane.002|Cube.002|Dupli|14
-    2300032: Plane.002|Cube.002|Dupli|15
-    2300034: Plane.002|Cube.002|Dupli|16
-    2300036: Plane.002|Cube.002|Dupli|17
-    2300038: Plane.002|Cube.002|Dupli|18
-    2300040: Plane.002|Cube.002|Dupli|19
-    2300042: Plane.002|Cube.002|Dupli|2
-    2300044: Plane.002|Cube.002|Dupli|20
-    2300046: Plane.002|Cube.002|Dupli|21
-    2300048: Plane.002|Cube.002|Dupli|22
-    2300050: Plane.002|Cube.002|Dupli|23
-    2300052: Plane.002|Cube.002|Dupli|24
-    2300054: Plane.002|Cube.002|Dupli|25
-    2300056: Plane.002|Cube.002|Dupli|26
-    2300058: Plane.002|Cube.002|Dupli|27
-    2300060: Plane.002|Cube.002|Dupli|28
-    2300062: Plane.002|Cube.002|Dupli|29
-    2300064: Plane.002|Cube.002|Dupli|3
-    2300066: Plane.002|Cube.002|Dupli|30
-    2300068: Plane.002|Cube.002|Dupli|31
-    2300070: Plane.002|Cube.002|Dupli|32
-    2300072: Plane.002|Cube.002|Dupli|33
-    2300074: Plane.002|Cube.002|Dupli|34
-    2300076: Plane.002|Cube.002|Dupli|4
-    2300078: Plane.002|Cube.002|Dupli|5
-    2300080: Plane.002|Cube.002|Dupli|6
-    2300082: Plane.002|Cube.002|Dupli|7
-    2300084: Plane.002|Cube.002|Dupli|8
-    2300086: Plane.002|Cube.002|Dupli|9
-    2300088: Plane.003
-    2300090: Plane.003|Cube.002|Dupli|
-    2300092: Plane.003|Cube.002|Dupli|1
-    2300094: Plane.003|Cube.002|Dupli|10
-    2300096: Plane.003|Cube.002|Dupli|11
-    2300098: Plane.003|Cube.002|Dupli|12
-    2300100: Plane.003|Cube.002|Dupli|13
-    2300102: Plane.003|Cube.002|Dupli|14
-    2300104: Plane.003|Cube.002|Dupli|2
-    2300106: Plane.003|Cube.002|Dupli|3
-    2300108: Plane.003|Cube.002|Dupli|4
-    2300110: Plane.003|Cube.002|Dupli|5
-    2300112: Plane.003|Cube.002|Dupli|6
-    2300114: Plane.003|Cube.002|Dupli|7
-    2300116: Plane.003|Cube.002|Dupli|8
-    2300118: Plane.003|Cube.002|Dupli|9
-    2300120: //RootNode
-    3300000: BezierCircle
-    3300002: BezierCurve.000
-    3300004: BezierCurve.002
-    3300006: Cube.002
-    3300008: Pipe
-    3300010: Pipe_dup
-    3300012: Plane
-    3300014: Plane.001
-    3300016: Plane.002
-    3300018: Plane.002|Cube.002|Dupli|
-    3300020: Plane.002|Cube.002|Dupli|1
-    3300022: Plane.002|Cube.002|Dupli|10
-    3300024: Plane.002|Cube.002|Dupli|11
-    3300026: Plane.002|Cube.002|Dupli|12
-    3300028: Plane.002|Cube.002|Dupli|13
-    3300030: Plane.002|Cube.002|Dupli|14
-    3300032: Plane.002|Cube.002|Dupli|15
-    3300034: Plane.002|Cube.002|Dupli|16
-    3300036: Plane.002|Cube.002|Dupli|17
-    3300038: Plane.002|Cube.002|Dupli|18
-    3300040: Plane.002|Cube.002|Dupli|19
-    3300042: Plane.002|Cube.002|Dupli|2
-    3300044: Plane.002|Cube.002|Dupli|20
-    3300046: Plane.002|Cube.002|Dupli|21
-    3300048: Plane.002|Cube.002|Dupli|22
-    3300050: Plane.002|Cube.002|Dupli|23
-    3300052: Plane.002|Cube.002|Dupli|24
-    3300054: Plane.002|Cube.002|Dupli|25
-    3300056: Plane.002|Cube.002|Dupli|26
-    3300058: Plane.002|Cube.002|Dupli|27
-    3300060: Plane.002|Cube.002|Dupli|28
-    3300062: Plane.002|Cube.002|Dupli|29
-    3300064: Plane.002|Cube.002|Dupli|3
-    3300066: Plane.002|Cube.002|Dupli|30
-    3300068: Plane.002|Cube.002|Dupli|31
-    3300070: Plane.002|Cube.002|Dupli|32
-    3300072: Plane.002|Cube.002|Dupli|33
-    3300074: Plane.002|Cube.002|Dupli|34
-    3300076: Plane.002|Cube.002|Dupli|4
-    3300078: Plane.002|Cube.002|Dupli|5
-    3300080: Plane.002|Cube.002|Dupli|6
-    3300082: Plane.002|Cube.002|Dupli|7
-    3300084: Plane.002|Cube.002|Dupli|8
-    3300086: Plane.002|Cube.002|Dupli|9
-    3300088: Plane.003
-    3300090: Plane.003|Cube.002|Dupli|
-    3300092: Plane.003|Cube.002|Dupli|1
-    3300094: Plane.003|Cube.002|Dupli|10
-    3300096: Plane.003|Cube.002|Dupli|11
-    3300098: Plane.003|Cube.002|Dupli|12
-    3300100: Plane.003|Cube.002|Dupli|13
-    3300102: Plane.003|Cube.002|Dupli|14
-    3300104: Plane.003|Cube.002|Dupli|2
-    3300106: Plane.003|Cube.002|Dupli|3
-    3300108: Plane.003|Cube.002|Dupli|4
-    3300110: Plane.003|Cube.002|Dupli|5
-    3300112: Plane.003|Cube.002|Dupli|6
-    3300114: Plane.003|Cube.002|Dupli|7
-    3300116: Plane.003|Cube.002|Dupli|8
-    3300118: Plane.003|Cube.002|Dupli|9
-    3300120: //RootNode
-    4300000: Pipe
-    4300002: Pipe_dup
-    4300004: BezierCircle
-    4300006: Plane
-    4300008: Plane.001
-    4300010: Plane.002
-    4300012: Plane.002|Cube.002|Dupli|
-    4300014: Cube.002
-    4300016: Plane.003
-    4300018: BezierCurve.002
-    4300020: BezierCurve.000
-    2186277476908879412: ImportLogs
+    100000: Armature
+    100002: BezierCurve.001
+    100004: //RootNode
+    100006: root
+    100008: wing.L
+    100010: wing.L_end
+    100012: wing.R
+    100014: wing.R_end
+    400000: Armature
+    400002: BezierCurve.001
+    400004: //RootNode
+    400006: root
+    400008: wing.L
+    400010: wing.L_end
+    400012: wing.R
+    400014: wing.R_end
+    2100000: Material.004
+    2100002: Material.003
+    2100004: Material.009
+    2100006: Material.005
+    2100008: Material.006
+    4300000: BezierCurve.001
+    7400000: Armature.001|Fly
+    9500000: //RootNode
+    13700000: BezierCurve.001
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -293,7 +53,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.009
-    second: {fileID: 2100000, guid: fd4b98f7288e37c49a306a7f6b5dce75, type: 2}
+    second: {fileID: 2100000, guid: d94fd4a4264f6a74e9a60c62b9831cd3, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -320,7 +80,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature.001|Fly
+      takeName: Armature.001|Fly
+      firstFrame: -0
+      lastFrame: 11
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -345,8 +133,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -373,7 +161,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
