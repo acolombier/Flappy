@@ -1,17 +1,50 @@
 fileFormatVersion: 2
-guid: 43fdb5a48795bca408a189339ce26e23
+guid: e8c5060ff5c322c45ab68cb95a0f7239
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: default
-    100002: //RootNode
-    400000: default
-    400002: //RootNode
-    2100000: defaultMat
-    2300000: default
-    3300000: default
-    4300000: default
-  externalObjects: {}
+    100000: //RootNode
+    400000: //RootNode
+    2100000: Material.001
+    2100002: Material.004
+    2100004: Material.003
+    2100006: Material.009
+    2100008: Material.005
+    2100010: Material.006
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: BezierCurve.002
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: fdff9ba08f85acb4a8c2afd40e55718b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: ffbb4297bab6a4144925dbb5b4477ba0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: 12df8f26a1575e448868232e5baf6f80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: cff390420daac844296ad83cd196a2d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: e19ef3799e09f2a4f91c670007c91689, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.009
+    second: {fileID: 2100000, guid: ade84a8adba0b7b45a86b3fcf5b02f87, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
