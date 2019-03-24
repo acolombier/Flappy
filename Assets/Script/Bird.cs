@@ -42,7 +42,11 @@ public class Bird : MonoBehaviour
             }
             else
             {
+#if UNITY_ANDROID
+                if (Input.touchCount != 0)
+#elif UNITY_STANDALONE || UNITY_WEBPLAYER
                 if (Input.GetButtonDown("Jump"))
+#endif
                 {
                     rigitBody.velocity = new Vector3(Speed, JumpBoost, 0);
                 }
