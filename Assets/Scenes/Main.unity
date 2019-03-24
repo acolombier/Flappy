@@ -238,6 +238,8 @@ MonoBehaviour:
   JumpBoost: 15
   CoolDownTime: 2
   Gravity: 50
+  rotateFactor: 12
+  maxRotate: 0.4
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
