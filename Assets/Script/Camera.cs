@@ -15,6 +15,7 @@ public class Camera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(Bird.transform.position.x, transform.position.y, transform.position.z);   
+        if (Bird.GetComponent<Bird>().Alive)
+            transform.position = new Vector3(Bird.transform.position.x, transform.position.y, transform.position.z);   
     }
 }

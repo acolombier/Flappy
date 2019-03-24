@@ -9,9 +9,14 @@ public class Bird : MonoBehaviour
     public float JumpBoost = 250f;
     public float CoolDownTime = 2;
     public float Gravity = 1f;
+
+    public float rotateFactor = 5f;
+    public float maxRotate = 45f;
     
     private Rigidbody rigitBody;
     private float knockedOutAt;
+
+    public bool Alive { get { return knockedOutAt == 0f; } }
 
     // Start is called before the first frame update
     void Awake()
@@ -22,7 +27,7 @@ public class Bird : MonoBehaviour
 
     void Start()
     {
-        rigitBody.velocity = new Vector3(Speed, 0, 0);
+        rigitBody.velocity = new Vector3(Speed, JumpBoost, 0);
         Physics.gravity = new Vector3(0, -Gravity, 0);
     }
 
@@ -35,14 +40,20 @@ public class Bird : MonoBehaviour
             {
                 knockedOutAt = Time.fixedTime;
             }
-            else if (Input.GetButtonDown("Jump"))
+            else
             {
-                rigitBody.velocity = new Vector3(Speed, JumpBoost, 0);
+                if (Input.GetButtonDown("Jump"))
+                {
+                    rigitBody.velocity = new Vector3(Speed, JumpBoost, 0);
+                }
+                //transform.rotation = new Quaternion(0, 0, 0.5f, 1);
+                transform.rotation = new Quaternion(0, 0, Mathf.Clamp(rigitBody.velocity.y / rotateFactor, -1, 1) * maxRotate, 1);
             }
         }
         else if (knockedOutAt != 0 && knockedOutAt + CoolDownTime < Time.fixedTime)
         {
             SceneManager.LoadScene(0);
-        }
+        }        
+
     }
 }

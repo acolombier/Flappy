@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0c6d49928d60c664ba59675d26e4bbf7
+guid: b7106494ef6bac343bdac792ed99c4e3
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -9,19 +9,14 @@ ModelImporter:
     2100002: Material.001
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Pipe
-    4300002: Pipe_dup
+    4300000: Pipe.001
+    4300002: Pipe
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: 45128d9a6ea93ca4293f9843c32018ff, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: Material.002
-    second: {fileID: 2100000, guid: ae0208ba0788c1c42ad452119c30458c, type: 2}
+    second: {fileID: 2100000, guid: 8a2670009bd712448ac868445d52fa14, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
