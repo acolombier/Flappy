@@ -238,8 +238,8 @@ MonoBehaviour:
   JumpBoost: 15
   CoolDownTime: 2
   Gravity: 50
-  rotateFactor: 12
-  maxRotate: 0.4
+  rotateFactor: 6
+  maxRotate: 0.2
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,6 +839,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
+--- !u!95 &1256458767
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256458763}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 561c239f2aa49b745a56a0c43a36d7f8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1447393751
 GameObject:
   m_ObjectHideFlags: 0
