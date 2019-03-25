@@ -1,36 +1,20 @@
 fileFormatVersion: 2
-guid: 11624cb37e29abe479664288ccbaffa3
+guid: af441ffa3eca73d4ca9c0e97ef819b91
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Armature
-    100002: BezierCurve.003
-    100004: //RootNode
-    100006: root
-    100008: wing.L
-    100010: wing.L_end
-    100012: wing.R
-    100014: wing.R_end
-    400000: Armature
-    400002: BezierCurve.003
-    400004: //RootNode
-    400006: root
-    400008: wing.L
-    400010: wing.L_end
-    400012: wing.R
-    400014: wing.R_end
+    100000: //RootNode
+    400000: //RootNode
     2100000: No Name
-    4300000: BezierCurve.003
-    7400000: Armature|Fly
-    9500000: //RootNode
-    11100000: //RootNode
-    13700000: BezierCurve.003
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Sol
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
-    second: {fileID: 2100000, guid: 545d42889cb1d994eb29bb206b3b90da, type: 2}
+    second: {fileID: 2100000, guid: 2544cd6b98bd9ac4daf02d79c311da2e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -50,7 +34,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -82,8 +66,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -107,10 +91,10 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
