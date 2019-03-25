@@ -51,7 +51,12 @@ ModelImporter:
     4300012: Line007
     4300014: Line008
     4300016: Line009
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: cdcb69973ce245c4791ebc7de796896a, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
