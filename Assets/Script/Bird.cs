@@ -10,10 +10,14 @@ public class Bird : MonoBehaviour
     public float CoolDownTime = 2;
     public float Gravity = 1f;
 
+    [Header("Animation binding")]
+    public string FlyAnimationName = "Fly";
+
     public float rotateFactor = 5f;
     public float maxRotate = 45f;
     
     private Rigidbody rigitBody;
+    private Animator animator;
     private float knockedOutAt;
 
     public bool Alive { get { return knockedOutAt == 0f; } }
@@ -23,6 +27,7 @@ public class Bird : MonoBehaviour
     {
         knockedOutAt = 0;
         rigitBody = GetComponent<Rigidbody>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     void Start()
@@ -48,6 +53,7 @@ public class Bird : MonoBehaviour
                 if (Input.GetButtonDown("Jump"))
 #endif
                 {
+                    animator.Play(FlyAnimationName);
                     rigitBody.velocity = new Vector3(Speed, JumpBoost, 0);
                 }
                 //transform.rotation = new Quaternion(0, 0, 0.5f, 1);

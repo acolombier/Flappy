@@ -238,6 +238,7 @@ MonoBehaviour:
   JumpBoost: 15
   CoolDownTime: 2
   Gravity: 50
+  FlyAnimationName: Fly
   rotateFactor: 6
   maxRotate: 0.2
 --- !u!1 &170076733
@@ -897,5 +898,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 11624cb37e29abe479664288ccbaffa3, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 561c239f2aa49b745a56a0c43a36d7f8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11624cb37e29abe479664288ccbaffa3, type: 3}
