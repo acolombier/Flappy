@@ -682,6 +682,25 @@ MonoBehaviour:
   GateCounter: {fileID: 1447393751}
   BackgroundWidth: 32
   BackgroundLoadedOffset: 64
+--- !u!1 &1073144420 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: 11624cb37e29abe479664288ccbaffa3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1841832617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1073144421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073144420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ced684584ce72ac46931007df3887e76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
 --- !u!1001 &1195274675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -896,6 +915,14 @@ PrefabInstance:
     - target: {fileID: 400004, guid: 11624cb37e29abe479664288ccbaffa3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 11624cb37e29abe479664288ccbaffa3, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 561c239f2aa49b745a56a0c43a36d7f8, type: 2}
+    - target: {fileID: 9500000, guid: 11624cb37e29abe479664288ccbaffa3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11624cb37e29abe479664288ccbaffa3, type: 3}
