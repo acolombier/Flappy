@@ -1,13 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Bird : MonoBehaviour
 {
     public float Speed = 50f;
     public float JumpBoost = 250f;
-    public float CoolDownTime = 2;
     public float Gravity = 1f;
 
     [Header("Animation binding")]
@@ -18,14 +17,11 @@ public class Bird : MonoBehaviour
     
     private Rigidbody rigitBody;
     private Animator animator;
-    private float knockedOutAt;
-
-    public bool Alive { get { return knockedOutAt == 0f; } }
+    private GameManager manager = null;
 
     // Start is called before the first frame update
     void Awake()
     {
-        knockedOutAt = 0;
         rigitBody = GetComponent<Rigidbody>();
         animator = GetComponentInChildren<Animator>();
     }
@@ -39,31 +35,44 @@ public class Bird : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (knockedOutAt == 0)
+        if (!manager)
+            return;
+
+        if (!manager.Dead)
         {
-            if (rigitBody.velocity.x != Speed || transform.position.y < -6.5f)
+            if (manager.Running)
             {
-                knockedOutAt = Time.fixedTime;
-            }
-            else
-            {
+                if (rigitBody.velocity.x != Speed || transform.position.y < -6.5f)
+                {
+                    manager.GameOver();
+                }
+                else
+                {
 #if UNITY_ANDROID
                 if (Input.touchCount != 0 && Input.GetTouch(0).phase == TouchPhase.Began)
 #elif UNITY_STANDALONE || UNITY_WEBPLAYER
-                if (Input.GetButtonDown("Jump"))
+                    if (Input.GetButtonDown("Jump"))
 #endif
-                {
-                    animator.Play(FlyAnimationName);
-                    rigitBody.velocity = new Vector3(Speed, JumpBoost, 0);
+                        jump();
                 }
-                //transform.rotation = new Quaternion(0, 0, 0.5f, 1);
-                transform.rotation = new Quaternion(0, 0, Mathf.Clamp(rigitBody.velocity.y / rotateFactor, -1, 1) * maxRotate, 1);
+            } else if (transform.position.y < manager.MenuJumpThreshold)
+            {
+                jump();
             }
-        }
-        else if (knockedOutAt != 0 && knockedOutAt + CoolDownTime < Time.fixedTime)
-        {
-            SceneManager.LoadScene(0);
-        }        
 
+            transform.rotation = new Quaternion(0, 0, Mathf.Clamp(rigitBody.velocity.y / rotateFactor, -1, 1) * maxRotate, 1);
+        }
+
+    }
+
+    private void jump()
+    {
+        animator.Play(FlyAnimationName);
+        rigitBody.velocity = new Vector3(Speed, JumpBoost, 0);
+    }
+
+    public void RegisterManager(GameManager manager)
+    {
+        this.manager = manager;
     }
 }

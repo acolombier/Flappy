@@ -6,6 +6,8 @@ public class Camera : MonoBehaviour
 {
     public GameObject Bird;
 
+    private GameManager manager = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +17,15 @@ public class Camera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Bird.GetComponent<Bird>().Alive)
-            transform.position = new Vector3(Bird.transform.position.x, transform.position.y, transform.position.z);   
+        if (!manager)
+            return;
+
+        if (!manager.Dead)
+            transform.position = new Vector3(Bird.transform.position.x, transform.position.y, transform.position.z);
+    }
+
+    public void RegisterManager(GameManager manager)
+    {
+        this.manager = manager;
     }
 }

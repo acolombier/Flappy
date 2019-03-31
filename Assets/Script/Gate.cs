@@ -9,8 +9,6 @@ public class Gate : MonoBehaviour
     public Vector2 GateSize = new Vector2(0, 1);
     public Vector2 GatePosition = new Vector2(-3, 4);
 
-    public bool passed { get { return Bird.transform.position.x > transform.position.x;  } }
-
     // Start is called before the first frame update
     void Start()
     {
