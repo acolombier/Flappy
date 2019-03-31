@@ -53,11 +53,11 @@ public class Bird : MonoBehaviour
 #elif UNITY_STANDALONE || UNITY_WEBPLAYER
                     if (Input.GetButtonDown("Jump"))
 #endif
-                        jump();
+                        Jump();
                 }
             } else if (transform.position.y < manager.MenuJumpThreshold)
             {
-                jump();
+                Jump();
             }
 
             transform.rotation = new Quaternion(0, 0, Mathf.Clamp(rigitBody.velocity.y / rotateFactor, -1, 1) * maxRotate, 1);
@@ -65,7 +65,7 @@ public class Bird : MonoBehaviour
 
     }
 
-    private void jump()
+    public void Jump()
     {
         animator.Play(FlyAnimationName);
         rigitBody.velocity = new Vector3(Speed, JumpBoost, 0);

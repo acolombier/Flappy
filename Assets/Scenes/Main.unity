@@ -666,47 +666,12 @@ PrefabInstance:
     - target: {fileID: 462992907824147245, guid: 00e25a895e8cce74cba2ce0f5733e1be,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 462992907824147245, guid: 00e25a895e8cce74cba2ce0f5733e1be,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3962015055361553639, guid: 00e25a895e8cce74cba2ce0f5733e1be,
         type: 3}
@@ -907,8 +872,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 420
-  m_fontSizeBase: 420
+  m_fontSize: 192
+  m_fontSizeBase: 192
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1092,7 +1057,7 @@ MonoBehaviour:
   Title: {fileID: 1838738848}
   ActionButton: {fileID: 700374870}
   TitleInPosition: 420
-  TitleOutPosition: 920
+  TitleOutPosition: 960
   ButtonInPosition: -600
   ButtonOutPosition: -1200
   MenuJumpThreshold: 0

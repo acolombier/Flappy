@@ -73,6 +73,7 @@ public class GameManager : MonoBehaviour
         hideUI();
 
         knockedOutAt = 0;
+        player.Jump();
     }
 
     public bool movingUI { get { return uiProcessTime > 0; } }
