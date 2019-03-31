@@ -1,6 +1,6 @@
 ﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
-Shader "Custom/Gradient_3Color" {
+ Shader "Custom/Gradient_3Color" {
      Properties {
          [PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
          _ColorTop ("Top Color", Color) = (1,1,1,1)
